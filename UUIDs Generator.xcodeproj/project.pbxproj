@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4245A5A4FA9382F293CFD2CD /* Pods_UUIDs_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7212ACEAC66CD7DC9B1EEE3 /* Pods_UUIDs_Generator.framework */; };
 		B90C8B4128EC9777003D826A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4028EC9777003D826A /* AppDelegate.swift */; };
 		B90C8B4328EC9777003D826A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4228EC9777003D826A /* SceneDelegate.swift */; };
 		B90C8B4528EC9777003D826A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4428EC9777003D826A /* ViewController.swift */; };
 		B90C8B4828EC9777003D826A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4628EC9777003D826A /* Main.storyboard */; };
 		B90C8B4A28EC977A003D826A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4928EC977A003D826A /* Assets.xcassets */; };
 		B90C8B4D28EC977A003D826A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4B28EC977A003D826A /* LaunchScreen.storyboard */; };
+		B90C8B5528EC9994003D826A /* store_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B5428EC9994003D826A /* store_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62C75841901C16C6FD830718 /* Pods-UUIDs Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIDs Generator.debug.xcconfig"; path = "Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator.debug.xcconfig"; sourceTree = "<group>"; };
+		962A6B1EA2B6B031E72F9D92 /* Pods-UUIDs Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIDs Generator.release.xcconfig"; path = "Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator.release.xcconfig"; sourceTree = "<group>"; };
 		B90C8B3D28EC9777003D826A /* UUIDs Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UUIDs Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C8B4028EC9777003D826A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B90C8B4228EC9777003D826A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		B90C8B4928EC977A003D826A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B90C8B4C28EC977A003D826A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B90C8B4E28EC977A003D826A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90C8B5428EC9994003D826A /* store_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = store_icon.png; path = ../../../Apps/uuid_bubblewrap/store_icon.png; sourceTree = "<group>"; };
+		F7212ACEAC66CD7DC9B1EEE3 /* Pods_UUIDs_Generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UUIDs_Generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4245A5A4FA9382F293CFD2CD /* Pods_UUIDs_Generator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CB3E12E9BFFCC24EE9C5FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7212ACEAC66CD7DC9B1EEE3 /* Pods_UUIDs_Generator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B90C8B3428EC9777003D826A = {
 			isa = PBXGroup;
 			children = (
 				B90C8B3F28EC9777003D826A /* UUIDs Generator */,
 				B90C8B3E28EC9777003D826A /* Products */,
+				F7AE9E8D3FBE2ECCFCF33417 /* Pods */,
+				6CB3E12E9BFFCC24EE9C5FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,22 @@
 				B90C8B4028EC9777003D826A /* AppDelegate.swift */,
 				B90C8B4228EC9777003D826A /* SceneDelegate.swift */,
 				B90C8B4428EC9777003D826A /* ViewController.swift */,
+				B90C8B5428EC9994003D826A /* store_icon.png */,
 				B90C8B4628EC9777003D826A /* Main.storyboard */,
 				B90C8B4928EC977A003D826A /* Assets.xcassets */,
 				B90C8B4B28EC977A003D826A /* LaunchScreen.storyboard */,
 				B90C8B4E28EC977A003D826A /* Info.plist */,
 			);
 			path = "UUIDs Generator";
+			sourceTree = "<group>";
+		};
+		F7AE9E8D3FBE2ECCFCF33417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62C75841901C16C6FD830718 /* Pods-UUIDs Generator.debug.xcconfig */,
+				962A6B1EA2B6B031E72F9D92 /* Pods-UUIDs Generator.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B90C8B5128EC977A003D826A /* Build configuration list for PBXNativeTarget "UUIDs Generator" */;
 			buildPhases = (
+				D016C30BF1D4428FD575E887 /* [CP] Check Pods Manifest.lock */,
 				B90C8B3928EC9777003D826A /* Sources */,
 				B90C8B3A28EC9777003D826A /* Frameworks */,
 				B90C8B3B28EC9777003D826A /* Resources */,
+				AB85048A6C85A0013E2373CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +156,54 @@
 			files = (
 				B90C8B4D28EC977A003D826A /* LaunchScreen.storyboard in Resources */,
 				B90C8B4A28EC977A003D826A /* Assets.xcassets in Resources */,
+				B90C8B5528EC9994003D826A /* store_icon.png in Resources */,
 				B90C8B4828EC9777003D826A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB85048A6C85A0013E2373CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D016C30BF1D4428FD575E887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UUIDs Generator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B90C8B3928EC9777003D826A /* Sources */ = {
@@ -284,11 +356,12 @@
 		};
 		B90C8B5228EC977A003D826A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C75841901C16C6FD830718 /* Pods-UUIDs Generator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UUIDs Generator/Info.plist";
@@ -301,8 +374,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Julian.UUIDs-Generator";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = app.jl.uuid.generator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,11 +385,12 @@
 		};
 		B90C8B5328EC977A003D826A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962A6B1EA2B6B031E72F9D92 /* Pods-UUIDs Generator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UUIDs Generator/Info.plist";
@@ -329,8 +403,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Julian.UUIDs-Generator";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = app.jl.uuid.generator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
