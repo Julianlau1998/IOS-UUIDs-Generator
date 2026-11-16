@@ -8,27 +8,71 @@
 
 /* Begin PBXBuildFile section */
 		4245A5A4FA9382F293CFD2CD /* Pods_UUIDs_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7212ACEAC66CD7DC9B1EEE3 /* Pods_UUIDs_Generator.framework */; };
-		B90C8B4128EC9777003D826A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4028EC9777003D826A /* AppDelegate.swift */; };
-		B90C8B4328EC9777003D826A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4228EC9777003D826A /* SceneDelegate.swift */; };
-		B90C8B4528EC9777003D826A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8B4428EC9777003D826A /* ViewController.swift */; };
-		B90C8B4828EC9777003D826A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4628EC9777003D826A /* Main.storyboard */; };
+		6F9A63D730AA5F5E00EC873A /* UUIDFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63D630AA5F5E00EC873A /* UUIDFactory.swift */; };
+		6F9A63D930AA5F7100EC873A /* UUIDInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63D830AA5F7100EC873A /* UUIDInspection.swift */; };
+		6F9A63DB30AA5F7700EC873A /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63DA30AA5F7700EC873A /* HistoryItem.swift */; };
+		6F9A63DD30AA5F7F00EC873A /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63DC30AA5F7F00EC873A /* AppSettings.swift */; };
+		6F9A63DF30AA5F8A00EC873A /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63DE30AA5F8A00EC873A /* StoreManager.swift */; };
+		6F9A63E130AA5FAB00EC873A /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63E030AA5FAB00EC873A /* AdsManager.swift */; };
+		6F9A63E330AA5FB700EC873A /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63E230AA5FB700EC873A /* Exporter.swift */; };
+		6F9A63E530AA5FD100EC873A /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63E430AA5FD100EC873A /* DesignSystem.swift */; };
+		6F9A63E730AA5FD500EC873A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63E630AA5FD500EC873A /* AppRouter.swift */; };
+		6F9A63E930AA5FDC00EC873A /* ProViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63E830AA5FDC00EC873A /* ProViews.swift */; };
+		6F9A63EB30AA5FF600EC873A /* NativeAdViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63EA30AA5FF600EC873A /* NativeAdViews.swift */; };
+		6F9A63ED30AA5FFE00EC873A /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63EC30AA5FFE00EC873A /* SharedViews.swift */; };
+		6F9A63EF30AA604300EC873A /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63EE30AA604300EC873A /* GeneratorView.swift */; };
+		6F9A63F130AA604800EC873A /* ExportMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63F030AA604800EC873A /* ExportMenu.swift */; };
+		6F9A63F330AA605C00EC873A /* BulkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63F230AA605C00EC873A /* BulkView.swift */; };
+		6F9A63F530AA607800EC873A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63F430AA607800EC873A /* HistoryView.swift */; };
+		6F9A63F730AA60A300EC873A /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63F630AA60A300EC873A /* ToolsView.swift */; };
+		6F9A63F930AA60C000EC873A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63F830AA60C000EC873A /* SettingsView.swift */; };
+		6F9A63FB30AA60D000EC873A /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63FA30AA60D000EC873A /* PaywallView.swift */; };
+		6F9A63FD30AA60DD00EC873A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63FC30AA60DD00EC873A /* WelcomeView.swift */; };
+		6F9A63FF30AA60EE00EC873A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A63FE30AA60EE00EC873A /* RootView.swift */; };
+		6F9A640130AA60F000EC873A /* UUIDGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A640030AA60F000EC873A /* UUIDGeneratorApp.swift */; };
+		6F9A640330AA60F600EC873A /* GenerateUUIDIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A640230AA60F600EC873A /* GenerateUUIDIntent.swift */; };
+		6F9A640530AA610000EC873A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A640430AA610000EC873A /* PrivacyInfo.xcprivacy */; };
+		6F9A640730AA610100EC873A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A640630AA610100EC873A /* Localizable.xcstrings */; };
+		6F9A640930AA610B00EC873A /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A640830AA610B00EC873A /* Products.storekit */; };
+		6F9A651830AA64D100EC873A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A651730AA64D100EC873A /* InfoPlist.xcstrings */; };
+		6F9A651A30AA64D400EC873A /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A651930AA64D400EC873A /* AppShortcuts.xcstrings */; };
 		B90C8B4A28EC977A003D826A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4928EC977A003D826A /* Assets.xcassets */; };
-		B90C8B4D28EC977A003D826A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4B28EC977A003D826A /* LaunchScreen.storyboard */; };
-		B90C8B5528EC9994003D826A /* store_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B5428EC9994003D826A /* store_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62C75841901C16C6FD830718 /* Pods-UUIDs Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIDs Generator.debug.xcconfig"; path = "Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator.debug.xcconfig"; sourceTree = "<group>"; };
+		6F9A63D630AA5F5E00EC873A /* UUIDFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDFactory.swift; sourceTree = "<group>"; };
+		6F9A63D830AA5F7100EC873A /* UUIDInspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDInspection.swift; sourceTree = "<group>"; };
+		6F9A63DA30AA5F7700EC873A /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		6F9A63DC30AA5F7F00EC873A /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		6F9A63DE30AA5F8A00EC873A /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		6F9A63E030AA5FAB00EC873A /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		6F9A63E230AA5FB700EC873A /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		6F9A63E430AA5FD100EC873A /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		6F9A63E630AA5FD500EC873A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		6F9A63E830AA5FDC00EC873A /* ProViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProViews.swift; sourceTree = "<group>"; };
+		6F9A63EA30AA5FF600EC873A /* NativeAdViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViews.swift; sourceTree = "<group>"; };
+		6F9A63EC30AA5FFE00EC873A /* SharedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViews.swift; sourceTree = "<group>"; };
+		6F9A63EE30AA604300EC873A /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		6F9A63F030AA604800EC873A /* ExportMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportMenu.swift; sourceTree = "<group>"; };
+		6F9A63F230AA605C00EC873A /* BulkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkView.swift; sourceTree = "<group>"; };
+		6F9A63F430AA607800EC873A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		6F9A63F630AA60A300EC873A /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		6F9A63F830AA60C000EC873A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6F9A63FA30AA60D000EC873A /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		6F9A63FC30AA60DD00EC873A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6F9A63FE30AA60EE00EC873A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6F9A640030AA60F000EC873A /* UUIDGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDGeneratorApp.swift; sourceTree = "<group>"; };
+		6F9A640230AA60F600EC873A /* GenerateUUIDIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateUUIDIntent.swift; sourceTree = "<group>"; };
+		6F9A640430AA610000EC873A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6F9A640630AA610100EC873A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6F9A640830AA610B00EC873A /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = file; path = Products.storekit; sourceTree = "<group>"; };
+		6F9A651730AA64D100EC873A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		6F9A651930AA64D400EC873A /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		962A6B1EA2B6B031E72F9D92 /* Pods-UUIDs Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIDs Generator.release.xcconfig"; path = "Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator.release.xcconfig"; sourceTree = "<group>"; };
 		B90C8B3D28EC9777003D826A /* UUIDs Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UUIDs Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B90C8B4028EC9777003D826A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B90C8B4228EC9777003D826A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B90C8B4428EC9777003D826A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B90C8B4728EC9777003D826A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B90C8B4928EC977A003D826A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B90C8B4C28EC977A003D826A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B90C8B4E28EC977A003D826A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B90C8B5428EC9994003D826A /* store_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = store_icon.png; path = ../../../Apps/uuid_bubblewrap/store_icon.png; sourceTree = "<group>"; };
 		F7212ACEAC66CD7DC9B1EEE3 /* Pods_UUIDs_Generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UUIDs_Generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +96,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F9A63D130AA5EF700EC873A /* Models 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Models 2";
+			sourceTree = "<group>";
+		};
+		6F9A63D230AA5F4100EC873A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F9A63D630AA5F5E00EC873A /* UUIDFactory.swift */,
+				6F9A63D830AA5F7100EC873A /* UUIDInspection.swift */,
+				6F9A63DA30AA5F7700EC873A /* HistoryItem.swift */,
+				6F9A63DC30AA5F7F00EC873A /* AppSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F9A63D330AA5F4100EC873A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F9A63DE30AA5F8A00EC873A /* StoreManager.swift */,
+				6F9A63E030AA5FAB00EC873A /* AdsManager.swift */,
+				6F9A63E230AA5FB700EC873A /* Exporter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6F9A63D430AA5F4200EC873A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F9A63E430AA5FD100EC873A /* DesignSystem.swift */,
+				6F9A63E630AA5FD500EC873A /* AppRouter.swift */,
+				6F9A63E830AA5FDC00EC873A /* ProViews.swift */,
+				6F9A63EA30AA5FF600EC873A /* NativeAdViews.swift */,
+				6F9A63EC30AA5FFE00EC873A /* SharedViews.swift */,
+				6F9A63EE30AA604300EC873A /* GeneratorView.swift */,
+				6F9A63F030AA604800EC873A /* ExportMenu.swift */,
+				6F9A63F230AA605C00EC873A /* BulkView.swift */,
+				6F9A63F430AA607800EC873A /* HistoryView.swift */,
+				6F9A63F630AA60A300EC873A /* ToolsView.swift */,
+				6F9A63F830AA60C000EC873A /* SettingsView.swift */,
+				6F9A63FA30AA60D000EC873A /* PaywallView.swift */,
+				6F9A63FC30AA60DD00EC873A /* WelcomeView.swift */,
+				6F9A63FE30AA60EE00EC873A /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F9A63D530AA5F4200EC873A /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				6F9A640230AA60F600EC873A /* GenerateUUIDIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
 		B90C8B3428EC9777003D826A = {
 			isa = PBXGroup;
 			children = (
@@ -73,14 +174,19 @@
 		B90C8B3F28EC9777003D826A /* UUIDs Generator */ = {
 			isa = PBXGroup;
 			children = (
-				B90C8B4028EC9777003D826A /* AppDelegate.swift */,
-				B90C8B4228EC9777003D826A /* SceneDelegate.swift */,
-				B90C8B4428EC9777003D826A /* ViewController.swift */,
-				B90C8B5428EC9994003D826A /* store_icon.png */,
-				B90C8B4628EC9777003D826A /* Main.storyboard */,
 				B90C8B4928EC977A003D826A /* Assets.xcassets */,
-				B90C8B4B28EC977A003D826A /* LaunchScreen.storyboard */,
 				B90C8B4E28EC977A003D826A /* Info.plist */,
+				6F9A63D130AA5EF700EC873A /* Models 2 */,
+				6F9A63D230AA5F4100EC873A /* Models */,
+				6F9A63D330AA5F4100EC873A /* Services */,
+				6F9A63D430AA5F4200EC873A /* Views */,
+				6F9A63D530AA5F4200EC873A /* Intents */,
+				6F9A640030AA60F000EC873A /* UUIDGeneratorApp.swift */,
+				6F9A640430AA610000EC873A /* PrivacyInfo.xcprivacy */,
+				6F9A640630AA610100EC873A /* Localizable.xcstrings */,
+				6F9A640830AA610B00EC873A /* Products.storekit */,
+				6F9A651730AA64D100EC873A /* InfoPlist.xcstrings */,
+				6F9A651930AA64D400EC873A /* AppShortcuts.xcstrings */,
 			);
 			path = "UUIDs Generator";
 			sourceTree = "<group>";
@@ -105,7 +211,7 @@
 				B90C8B3928EC9777003D826A /* Sources */,
 				B90C8B3A28EC9777003D826A /* Frameworks */,
 				B90C8B3B28EC9777003D826A /* Resources */,
-				AB85048A6C85A0013E2373CB /* [CP] Embed Pods Frameworks */,
+				8ED1107E1FFF3F67FD23766E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,31 +260,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90C8B4D28EC977A003D826A /* LaunchScreen.storyboard in Resources */,
+				6F9A640930AA610B00EC873A /* Products.storekit in Resources */,
+				6F9A651A30AA64D400EC873A /* AppShortcuts.xcstrings in Resources */,
+				6F9A651830AA64D100EC873A /* InfoPlist.xcstrings in Resources */,
+				6F9A640530AA610000EC873A /* PrivacyInfo.xcprivacy in Resources */,
 				B90C8B4A28EC977A003D826A /* Assets.xcassets in Resources */,
-				B90C8B5528EC9994003D826A /* store_icon.png in Resources */,
-				B90C8B4828EC9777003D826A /* Main.storyboard in Resources */,
+				6F9A640730AA610100EC873A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AB85048A6C85A0013E2373CB /* [CP] Embed Pods Frameworks */ = {
+		8ED1107E1FFF3F67FD23766E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D016C30BF1D4428FD575E887 /* [CP] Check Pods Manifest.lock */ = {
@@ -210,32 +322,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90C8B4528EC9777003D826A /* ViewController.swift in Sources */,
-				B90C8B4128EC9777003D826A /* AppDelegate.swift in Sources */,
-				B90C8B4328EC9777003D826A /* SceneDelegate.swift in Sources */,
+				6F9A63F130AA604800EC873A /* ExportMenu.swift in Sources */,
+				6F9A63D930AA5F7100EC873A /* UUIDInspection.swift in Sources */,
+				6F9A63EF30AA604300EC873A /* GeneratorView.swift in Sources */,
+				6F9A63F930AA60C000EC873A /* SettingsView.swift in Sources */,
+				6F9A63D730AA5F5E00EC873A /* UUIDFactory.swift in Sources */,
+				6F9A63DF30AA5F8A00EC873A /* StoreManager.swift in Sources */,
+				6F9A63DD30AA5F7F00EC873A /* AppSettings.swift in Sources */,
+				6F9A63E530AA5FD100EC873A /* DesignSystem.swift in Sources */,
+				6F9A63E730AA5FD500EC873A /* AppRouter.swift in Sources */,
+				6F9A63E930AA5FDC00EC873A /* ProViews.swift in Sources */,
+				6F9A63FB30AA60D000EC873A /* PaywallView.swift in Sources */,
+				6F9A63FF30AA60EE00EC873A /* RootView.swift in Sources */,
+				6F9A63F730AA60A300EC873A /* ToolsView.swift in Sources */,
+				6F9A63F530AA607800EC873A /* HistoryView.swift in Sources */,
+				6F9A640130AA60F000EC873A /* UUIDGeneratorApp.swift in Sources */,
+				6F9A63E130AA5FAB00EC873A /* AdsManager.swift in Sources */,
+				6F9A63F330AA605C00EC873A /* BulkView.swift in Sources */,
+				6F9A63FD30AA60DD00EC873A /* WelcomeView.swift in Sources */,
+				6F9A63DB30AA5F7700EC873A /* HistoryItem.swift in Sources */,
+				6F9A63ED30AA5FFE00EC873A /* SharedViews.swift in Sources */,
+				6F9A63EB30AA5FF600EC873A /* NativeAdViews.swift in Sources */,
+				6F9A640330AA60F600EC873A /* GenerateUUIDIntent.swift in Sources */,
+				6F9A63E330AA5FB700EC873A /* Exporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B90C8B4628EC9777003D826A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B90C8B4728EC9777003D826A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B90C8B4B28EC977A003D826A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B90C8B4C28EC977A003D826A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B90C8B4F28EC977A003D826A /* Debug */ = {
@@ -361,22 +474,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UUIDs Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UUID Generator";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your choice only affects which ads are shown. Pro removes all ads.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.jl.uuid.generator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,22 +510,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UUIDs Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UUID Generator";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your choice only affects which ads are shown. Pro removes all ads.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.jl.uuid.generator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

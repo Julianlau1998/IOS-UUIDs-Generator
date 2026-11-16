@@ -1,0 +1,106 @@
+{
+  "appPolicies": {
+    "eula": "",
+    "policies": [
+      {
+        "locale": "en_US",
+        "policyText": "",
+        "policyURL": ""
+      }
+    ]
+  },
+  "identifier": "7A2D9C41",
+  "nonRenewingSubscriptions": [],
+  "products": [],
+  "settings": {
+    "_applicationInternalID": "1603050260",
+    "_askToBuyEnabled": false,
+    "_billingGracePeriodEnabled": false,
+    "_billingIssuesEnabled": false,
+    "_developerTeamID": "HNRK32U6CL",
+    "_disableDialogs": false,
+    "_failTransactionsEnabled": false,
+    "_locale": "de",
+    "_renewalBillingIssuesEnabled": false,
+    "_storefront": "DEU",
+    "_storeKitErrors": [],
+    "_timeRate": 0
+  },
+  "subscriptionBundleGroups": [],
+  "subscriptionGroups": [
+    {
+      "id": "31600001",
+      "localizations": [
+        {
+          "description": "UUID Generator ohne Werbung, mit allen Pro-Funktionen",
+          "displayName": "UUID Generator Pro",
+          "locale": "de"
+        },
+        {
+          "description": "UUID Generator without ads, with all Pro features",
+          "displayName": "UUID Generator Pro",
+          "locale": "en_US"
+        }
+      ],
+      "name": "Pro",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "0.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "31600002",
+          "localizations": [
+            {
+              "description": "Alle Pro-Funktionen, monatlich kündbar",
+              "displayName": "Pro monatlich",
+              "locale": "de"
+            },
+            {
+              "description": "All Pro features, cancel anytime",
+              "displayName": "Pro Monthly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "app.jl.uuid.generator.pro.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Pro Monthly",
+          "subscriptionGroupID": "31600001",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "9.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "31600003",
+          "localizations": [
+            {
+              "description": "Alle Pro-Funktionen für ein ganzes Jahr",
+              "displayName": "Pro jährlich",
+              "locale": "de"
+            },
+            {
+              "description": "All Pro features for a whole year",
+              "displayName": "Pro Yearly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "app.jl.uuid.generator.pro.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Pro Yearly",
+          "subscriptionGroupID": "31600001",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 4,
+    "minor": 0
+  }
+}

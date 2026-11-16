@@ -1,0 +1,198 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleDisplayName": {
+      "comment": "App name on the Home Screen",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "UUID Generator"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UUID Generator"
+          }
+        }
+      }
+    },
+    "NSUserTrackingUsageDescription": {
+      "comment": "Privacy - Tracking Usage Description",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Wahl beeinflusst nur, welche Anzeigen du siehst. Mit Pro entfällt die Werbung ganz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Your choice only affects which ads are shown. Pro removes all ads."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu elección solo afecta a los anuncios que se muestran. Pro elimina todos los anuncios."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton choix influence uniquement les publicités affichées. Pro supprime toutes les publicités."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपका चुनाव केवल यह तय करता है कि कौन-से विज्ञापन दिखाए जाएँ। Pro सभी विज्ञापन हटा देता है।"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua scelta influisce solo sugli annunci mostrati. Pro rimuove tutta la pubblicità."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選択内容は表示される広告にのみ影響します。Proではすべての広告が非表示になります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 내용은 표시되는 광고에만 영향을 줍니다. Pro를 사용하면 모든 광고가 제거됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je keuze bepaalt alleen welke advertenties je ziet. Met Pro verdwijnen alle advertenties."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua escolha afeta apenas quais anúncios são exibidos. O Pro remove todos os anúncios."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш выбор влияет только на то, какая реклама показывается. С Pro реклама полностью отключается."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seçimin yalnızca hangi reklamların gösterileceğini etkiler. Pro tüm reklamları kaldırır."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lựa chọn của bạn chỉ ảnh hưởng đến quảng cáo được hiển thị. Pro loại bỏ mọi quảng cáo."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的选择只会影响显示哪些广告。Pro 可移除所有广告。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的選擇只會影響顯示哪些廣告。Pro 可移除所有廣告。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
