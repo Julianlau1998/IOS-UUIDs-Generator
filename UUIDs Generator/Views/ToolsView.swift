@@ -224,7 +224,7 @@ struct NameBasedView: View {
                 HeroCard(theme: .tools) {
                     VStack(alignment: .leading, spacing: 16) {
                         CardBadge { Text(version.title) }
-                        Text(verbatim: (result ?? "–").lineBreakingAtHyphens)
+                        IdentifierText(value: result ?? "–")
                             .font(.system(.title3, design: .monospaced, weight: .semibold))
                             .lineLimit(3)
                             .minimumScaleFactor(0.5)

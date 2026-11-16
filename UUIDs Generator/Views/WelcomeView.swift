@@ -12,7 +12,10 @@ struct WelcomeView: View {
     static let storageKey = "welcome.lastSeenVersion"
 
     static var needsPresentation: Bool {
-        UserDefaults.standard.integer(forKey: storageKey) < currentVersion
+        #if DEBUG
+        if ScreenshotDemo.isActive { return false }
+        #endif
+        return UserDefaults.standard.integer(forKey: storageKey) < currentVersion
     }
 
     let onContinue: () -> Void

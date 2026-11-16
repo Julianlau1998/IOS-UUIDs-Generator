@@ -213,7 +213,7 @@ private struct HistoryRow: View {
         } label: {
             HStack(alignment: .top, spacing: 12) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(verbatim: item.value)
+                    IdentifierText(value: item.value)
                         .font(.callout.monospaced())
                         .foregroundStyle(.primary)
                         .lineLimit(2)

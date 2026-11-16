@@ -10,6 +10,7 @@ struct RootView: View {
     @Environment(StoreManager.self) private var store
     @Environment(AdsManager.self) private var ads
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.modelContext) private var modelContext
 
     var body: some View {
         @Bindable var router = router
@@ -64,6 +65,9 @@ struct RootView: View {
         }
         #if DEBUG
         .task {
+            if ScreenshotDemo.isActive {
+                ScreenshotDemo.open(router: router, context: modelContext)
+            }
             if UserDefaults.standard.bool(forKey: "debugPaywallPlans") {
                 router.isShowingWelcome = false
                 router.showPaywall()
@@ -75,8 +79,8 @@ struct RootView: View {
             // so the first thing people see is the app, not a dialog.
             guard !router.isShowingWelcome else { return }
             #if DEBUG
-            // Review-screenshot runs must not be covered by consent dialogs.
-            guard !UserDefaults.standard.bool(forKey: "debugPaywallPlans") else { return }
+            // Screenshot runs must not be covered by consent dialogs or ads.
+            guard !UserDefaults.standard.bool(forKey: "debugPaywallPlans"), !ScreenshotDemo.isActive else { return }
             #endif
             try? await Task.sleep(for: .milliseconds(600))
             await ads.start(isPro: store.isPro)

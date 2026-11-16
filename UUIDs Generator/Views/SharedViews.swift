@@ -36,13 +36,16 @@ struct QRCodeSheet: View {
                             .scaledToFit()
                             .accessibilityLabel("QR code")
                     } else {
-                        ProgressView()
+                        // Same square shape while rendering, so the layout doesn't jump.
+                        Color.clear
+                            .aspectRatio(1, contentMode: .fit)
+                            .overlay { ProgressView().tint(.gray) }
                     }
                 }
-                .frame(width: 264, height: 264)
                 .padding(18)
                 .background(.white, in: .rect(cornerRadius: 24, style: .continuous))
-                Text(verbatim: value)
+                .frame(maxWidth: 300)
+                IdentifierText(value: value)
                     .font(.callout.monospaced())
                     .multilineTextAlignment(.center)
                     .textSelection(.enabled)
@@ -84,8 +87,9 @@ struct QRCodeSheet: View {
 }
 
 enum QRCode {
-    /// Creating a Core Image context is expensive, so the app shares one.
-    nonisolated private static let context = CIContext()
+    /// One shared software context: the default Metal context compiles shaders on first use,
+    /// which took several seconds on device – far too long for a tiny black-and-white image.
+    nonisolated private static let context = CIContext(options: [.useSoftwareRenderer: true, .cacheIntermediates: false])
 
     /// Touches the shared context once in the background, so the first QR code is instant.
     static func prepare() async {

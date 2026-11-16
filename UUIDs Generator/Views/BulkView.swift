@@ -93,6 +93,10 @@ struct BulkView: View {
                 }
             }
             .onChange(of: resultsRevision) {
+                #if DEBUG
+                // Screenshots show the card, the actions and the list together.
+                if ScreenshotDemo.isActive { return }
+                #endif
                 // The list starts below the fold; jump to it so it's obvious where it went.
                 withAnimation(.smooth) {
                     // Slightly below the top, so the header isn't hidden under the navigation bar.
@@ -131,6 +135,13 @@ struct BulkView: View {
                 Text("Watch a short ad to create this list – or get Pro for lists of up to \(StoreManager.proBulkLimit.formatted()) without ads.")
             }
             .sensoryFeedback(.success, trigger: resultsRevision)
+            #if DEBUG
+            .task {
+                if ScreenshotDemo.isActive, ScreenshotDemo.screen == "bulk", results.isEmpty {
+                    startGeneration(showsInterstitial: false)
+                }
+            }
+            #endif
             .sensoryFeedback(.success, trigger: didCopyAll) { _, new in new }
             .task(id: didCopyAll) {
                 guard didCopyAll else { return }

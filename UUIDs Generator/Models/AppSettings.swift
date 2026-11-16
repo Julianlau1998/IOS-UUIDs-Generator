@@ -58,7 +58,8 @@ final class AppSettings {
         hasURNPrefix = defaults.bool(forKey: Keys.urn)
         copiesAutomatically = defaults.bool(forKey: Keys.autoCopy)
         savesHistory = defaults.object(forKey: Keys.history) as? Bool ?? true
-        bulkCount = defaults.object(forKey: Keys.bulkCount) as? Int ?? 10
+        // integer(forKey:) also reads launch arguments, which arrive as strings.
+        bulkCount = defaults.object(forKey: Keys.bulkCount) == nil ? 10 : defaults.integer(forKey: Keys.bulkCount)
     }
 
     func resetFormat() {

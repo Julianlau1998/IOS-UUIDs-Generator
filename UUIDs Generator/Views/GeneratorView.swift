@@ -136,6 +136,17 @@ struct GeneratorView: View {
                 await QRCode.prepare()
             }
             .onAppear {
+                #if DEBUG
+                if ScreenshotDemo.isActive {
+                    uuid = ScreenshotDemo.uuid
+                    if ScreenshotDemo.screen == "qr" {
+                        Task { @MainActor in
+                            try? await Task.sleep(for: .seconds(2))
+                            isShowingQRCode = true
+                        }
+                    }
+                }
+                #endif
                 if uuid == nil {
                     uuid = UUIDFactory.make(settings.version)
                 }
@@ -158,7 +169,7 @@ struct GeneratorView: View {
                     }
                 }
 
-                Text(verbatim: formatted.lineBreakingAtHyphens)
+                IdentifierText(value: formatted)
                     .font(.system(.title2, design: .monospaced, weight: .semibold))
                     .lineLimit(3)
                     .minimumScaleFactor(0.5)

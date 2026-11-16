@@ -203,7 +203,7 @@ struct CopyableValueRow: View {
         } label: {
             HStack(spacing: 12) {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(verbatim: value.lineBreakingAtHyphens)
+                    IdentifierText(value: value)
                         .font(.callout.monospaced())
                         .foregroundStyle(.primary)
                         .lineLimit(2)
@@ -249,5 +249,30 @@ struct ProminentButtonLabel: View {
             Text(title)
         }
         .foregroundStyle(.white)
+    }
+}
+
+/// An identifier that wraps only at a hyphen: one line if it fits, otherwise split at the
+/// hyphen nearest the middle. Explicit lines are needed because Chinese and Japanese line
+/// breaking ignores word joiners and would split hex blocks.
+struct IdentifierText: View {
+    let value: String
+
+    var body: some View {
+        ViewThatFits(in: .horizontal) {
+            Text(verbatim: value)
+                .lineLimit(1)
+            Text(verbatim: Self.splitAtMiddleHyphen(value))
+            Text(verbatim: value.lineBreakingAtHyphens)
+        }
+    }
+
+    static func splitAtMiddleHyphen(_ value: String) -> String {
+        let characters = Array(value)
+        let hyphens = characters.indices.filter { characters[$0] == "-" && $0 < characters.count - 1 }
+        guard let split = hyphens.min(by: { abs($0 - characters.count / 2) < abs($1 - characters.count / 2) }) else {
+            return value.lineBreakingAtHyphens
+        }
+        return String(characters[...split]) + "\n" + String(characters[(split + 1)...])
     }
 }

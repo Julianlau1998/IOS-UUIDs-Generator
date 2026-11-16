@@ -36,6 +36,7 @@
 		6F9A640930AA610B00EC873A /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A640830AA610B00EC873A /* Products.storekit */; };
 		6F9A651830AA64D100EC873A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A651730AA64D100EC873A /* InfoPlist.xcstrings */; };
 		6F9A651A30AA64D400EC873A /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A651930AA64D400EC873A /* AppShortcuts.xcstrings */; };
+		6F9A695030AB344700EC873A /* ScreenshotDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A694F30AB344700EC873A /* ScreenshotDemo.swift */; };
 		B90C8B4A28EC977A003D826A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C8B4928EC977A003D826A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		6F9A640830AA610B00EC873A /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = file; path = Products.storekit; sourceTree = "<group>"; };
 		6F9A651730AA64D100EC873A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		6F9A651930AA64D400EC873A /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		6F9A694F30AB344700EC873A /* ScreenshotDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotDemo.swift; sourceTree = "<group>"; };
 		962A6B1EA2B6B031E72F9D92 /* Pods-UUIDs Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIDs Generator.release.xcconfig"; path = "Target Support Files/Pods-UUIDs Generator/Pods-UUIDs Generator.release.xcconfig"; sourceTree = "<group>"; };
 		B90C8B3D28EC9777003D826A /* UUIDs Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UUIDs Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C8B4928EC977A003D826A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				6F9A63FA30AA60D000EC873A /* PaywallView.swift */,
 				6F9A63FC30AA60DD00EC873A /* WelcomeView.swift */,
 				6F9A63FE30AA60EE00EC873A /* RootView.swift */,
+				6F9A694F30AB344700EC873A /* ScreenshotDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				6F9A63E530AA5FD100EC873A /* DesignSystem.swift in Sources */,
 				6F9A63E730AA5FD500EC873A /* AppRouter.swift in Sources */,
 				6F9A63E930AA5FDC00EC873A /* ProViews.swift in Sources */,
+				6F9A695030AB344700EC873A /* ScreenshotDemo.swift in Sources */,
 				6F9A63FB30AA60D000EC873A /* PaywallView.swift in Sources */,
 				6F9A63FF30AA60EE00EC873A /* RootView.swift in Sources */,
 				6F9A63F730AA60A300EC873A /* ToolsView.swift in Sources */,
