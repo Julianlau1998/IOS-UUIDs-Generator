@@ -21,7 +21,7 @@ struct SettingsView: View {
     @State private var isRedeemingCode = false
 
     static let appStoreURL = URL(string: "https://apps.apple.com/app/id1603050260")!
-    private let privacyURL = URL(string: "https://uuids.netlify.app/data-security")!
+    private let privacyURL = URL(string: "https://jlauapps.com/uuid-generator/privacy/")!
     private let supportURL = URL(string: "mailto:jlauapps@gmail.com?subject=UUID%20Generator")!
 
     private var appVersion: String {
